@@ -1,0 +1,10 @@
+// Builds sign to run locally by default, so anyone can build the app.
+// To sign with your own certificate, create Config/Local.xcconfig with:
+//   DEVELOPMENT_TEAM = YOURTEAMID
+//   CODE_SIGN_IDENTITY = Apple Development
+//   CODE_SIGN_STYLE = Automatic
+CODE_SIGN_IDENTITY = -
+CODE_SIGN_STYLE = Manual
+DEVELOPMENT_TEAM =
+
+#include? "Local.xcconfig"

@@ -38,7 +38,7 @@ Each time it opens from Applications, Localhosts:
 - copies its Claude Code skill to `~/.claude/skills/localhosts`, if you use Claude Code
 - turns on Open at Login the first time (you can turn it off in Settings)
 
-It has no Dock icon. Look for the server rack in the menu bar. If your menu bar is full, macOS may tuck the icon behind the » overflow; pin the window to the desktop instead, or ⌘-drag the icon somewhere visible.
+It has no Dock icon. Look for the server rack in the menu bar. If your menu bar is full, macOS may tuck the icon behind the » overflow. Opening Localhosts again from Applications or Spotlight brings up its window, or you can ⌘-drag the icon somewhere visible.
 
 ### Terminal permission
 

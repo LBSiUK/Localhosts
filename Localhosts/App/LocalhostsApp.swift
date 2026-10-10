@@ -44,6 +44,13 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         if UserDefaults.standard.bool(forKey: PinController.defaultsKey) { pin.show() }
     }
 
+    /// Opening the app again (from Applications, Spotlight or Launchpad) shows the window, as the
+    /// menu bar icon can be out of sight when the menu bar is full.
+    func applicationShouldHandleReopen(_ sender: NSApplication, hasVisibleWindows flag: Bool) -> Bool {
+        pin.show()
+        return false
+    }
+
     /// Turns "Open at login" on the first time the installed copy runs.
     private func setUpLoginItemOnce() {
         let key = "configuredLoginItem"
